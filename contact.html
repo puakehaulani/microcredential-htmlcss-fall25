@@ -2,55 +2,61 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>contact</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+    <link rel="stylesheet" href="./my_style.css">
     <script src="https://kit.fontawesome.com/54eef0c37e.js" crossorigin="anonymous"></script>
-
 </head>
 
 <body>
-    <header>
-        <ul>
-            <li><a href="index.html">home</a></li>
-            <li><a href="projects.html">projects</a></li>
-            <li><a href="contact.html">contact</a></li>
-        </ul>
-    </header>
+    <div class="pageContainer">
+        <header class="w3-top navigationContainer">
+            <div class="w3-bar">
+                <a href="index.html" class="w3-bar-item w3-button w3-mobile w3-hover-none navigationItem">home</a>
+                <a href="projects.html"
+                    class="w3-bar-item w3-button w3-mobile w3-hover-none navigationItem">projects</a>
+                <a href="contact.html"
+                    class="w3-bar-item w3-button w3-mobile w3-hover-none navigationItem navigationItemActive">contact</a>
+            </div>
+        </header>
 
-    <section>
-        <div>
-            <h1>have your people call my people</h1>
-            <p>if you're interested in building something together, message me with your ideas or project.</p>
-        </div>
-        <div>
-            <form method="POST" action="mailto:puakehaulani.dev@gmail.com">
+        <section class="contentContainer">
+            <section class="headerContainer">
+                <div>
+                    <h1>have your people call my people</h1>
+                    <p>if you're interested in building something together, message me with your ideas or project.</p>
+                </div>
 
-                <label for="name">name</label><input type="text" id="name" name="name" required>
-                <label for="email">email</label><input type="email" id="email" name="email" required>
-                <label for="subject">subject</label><textarea id="subject" name="subject" required rows="1"
-                    cols="50"></textarea>
-                <label for="message">message</label><textarea id="message" required rows="4" cols="50"></textarea>
-                <input type="submit">
+                <div>
+                    <form method="POST" action="mailto:puakehaulani.dev@gmail.com" class="contactForm">
+                        <input type="text" id="name" name="name" required placeholder="name" aria-label="name">
+                        <input type="email" id="email" name="email" required placeholder="email" aria-label="email">
+                        <textarea id="subject" name="subject" rows="1" placeholder="subject"
+                            aria-label="subject"></textarea>
+                        <textarea id="message" rows="6" placeholder="message" aria-label="message"></textarea>
+                        <input type="submit" value="submit">
+                    </form>
+                </div>
+            </section>
+        </section>
 
-            </form>
-        </div>
-    </section>
-
-    <footer>
-        <div><a href="https://www.linkedin.com/in/lexiscales/" target="_blank" rel="noreferrer"><i
-                    class="fa-brands fa-square-linkedin"></i></a>
-            <a href="https://www.instagram.com/puakehaulani/" target="_blank" rel="noreferrer"><i
-                    class="fa-brands fa-square-instagram"></i></a>
-            <a href="https://github.com/puakehaulani" target="_blank" rel="noreferrer"><i
-                    class="fa-brands fa-square-github"></i></a>
-        </div>
-
-        <div>
-            <div>made with &hearts; by lexi scales</div>
-            <div>&copy; 2025</div>
-        </div>
-    </footer>
+        <footer class="footerContainer">
+            <div class="socialIconsContainer">
+                <a href="https://www.linkedin.com/in/lexiscales/" target="_blank" rel="noreferrer"><i
+                        class="fa-brands fa-square-linkedin"></i></a>
+                <a href="https://www.instagram.com/puakehaulani/" target="_blank" rel="noreferrer"><i
+                        class="fa-brands fa-square-instagram"></i></a>
+                <a href="https://github.com/puakehaulani" target="_blank" rel="noreferrer"><i
+                        class="fa-brands fa-square-github"></i></a>
+            </div>
+            <div class="copyrightContainer">
+                <div>made with &hearts; by lexi scales</div>
+                <div>&copy; 2025</div>
+            </div>
+        </footer>
+    </div>
 </body>
 
 </html>
