@@ -12,44 +12,42 @@
 
 <body>
     <div class="pageContainer">
+
         <header class="w3-top navigationContainer">
             <div class="w3-bar">
-                <a href="index.html" class="w3-bar-item w3-button w3-mobile w3-hover-none navigationItem">home</a>
-                <a href="projects.html"
-                    class="w3-bar-item w3-button w3-mobile w3-hover-none navigationItem">projects</a>
-                <a href="contact.html"
-                    class="w3-bar-item w3-button w3-mobile w3-hover-none navigationItem navigationItemActive">contact</a>
+                <a href="index.html" class="w3-bar-item w3-button navigationItem">Home</a>
+                <a href="projects.html" class="w3-bar-item w3-button navigationItem">Projects</a>
+                <a href="contact.html" class="w3-bar-item w3-button navigationItem navigationItemActive">Contact</a>
             </div>
         </header>
 
         <section class="contentContainer">
-            <section class="headerContainer">
-                <div>
-                    <h1>have your people call my people</h1>
-                    <p>if you're interested in building something together, message me with your ideas or project.</p>
-                </div>
+            <section class="sectionContainer">
+                <h1 class="glowEffect">Have your people call my people</h1>
+                <p>If you're interested in building something together, message me with your ideas or project.</p>
 
-                <div>
-                    <form method="POST" action="mailto:puakehaulani.dev@gmail.com" class="contactForm">
-                        <input type="text" id="name" name="name" required placeholder="name" aria-label="name">
-                        <input type="email" id="email" name="email" required placeholder="email" aria-label="email">
-                        <textarea id="subject" name="subject" rows="1" placeholder="subject"
-                            aria-label="subject"></textarea>
-                        <textarea id="message" rows="6" placeholder="message" aria-label="message"></textarea>
-                        <input type="submit" value="submit">
-                    </form>
-                </div>
+                <form method="POST" action="mailto:puakehaulani.dev@gmail.com" class="contactForm">
+                    <input type="text" name="name" id="name" required placeholder="name" aria-label="name" />
+                    <input type="email" name="email" id="email" required placeholder="email" aria-label="email" />
+                    <input type="text" name="subject" id="subject" placeholder="subject" aria-label="subject" />
+                    <textarea name="message" id="message" rows="6" placeholder="message"
+                        aria-label="message"></textarea>
+                    <input type="submit" value="submit" />
+                </form>
             </section>
         </section>
 
         <footer class="footerContainer">
             <div class="socialIconsContainer">
-                <a href="https://www.linkedin.com/in/lexiscales/" target="_blank" rel="noreferrer"><i
-                        class="fa-brands fa-square-linkedin"></i></a>
-                <a href="https://www.instagram.com/puakehaulani/" target="_blank" rel="noreferrer"><i
-                        class="fa-brands fa-square-instagram"></i></a>
-                <a href="https://github.com/puakehaulani" target="_blank" rel="noreferrer"><i
-                        class="fa-brands fa-square-github"></i></a>
+                <a href="https://www.linkedin.com/in/lexiscales/" target="_blank" rel="noreferrer">
+                    <i class="fa-brands fa-square-linkedin"></i>
+                </a>
+                <a href="https://www.instagram.com/puakehaulani/" target="_blank" rel="noreferrer">
+                    <i class="fa-brands fa-square-instagram"></i>
+                </a>
+                <a href="https://github.com/puakehaulani" target="_blank" rel="noreferrer">
+                    <i class="fa-brands fa-square-github"></i>
+                </a>
             </div>
             <div class="copyrightContainer">
                 <div>made with &hearts; by lexi scales</div>
