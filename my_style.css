@@ -271,6 +271,18 @@ tbody tr:hover {
 	object-fit: cover;
 }
 
+.educationTableContainer {
+	overflow-x: auto;
+	margin-top: 1rem;
+}
+
+.educationTable {
+	width: 100%;
+	border-collapse: collapse;
+	min-width: 600px;
+}
+
+/* mobile screens */
 @media (max-width: 599px) {
 	.skillsGrid {
 		grid-template-columns: 1fr;
@@ -279,8 +291,13 @@ tbody tr:hover {
 	.projectsContainer {
 		column-count: 1;
 	}
+
+	.educationTable {
+		font-size: 0.75rem;
+	}
 }
 
+/* tablet screen */
 @media (min-width: 900px) {
 	.projectsContainer {
 		display: grid;
